@@ -138,7 +138,7 @@ class _ListaScreenState extends State<ListaScreen> {
                   log('Hola');
                 });
               }, 
-              icon: Icon(Icons.abc)
+              icon: const Icon(Icons.abc)
             )
 
 

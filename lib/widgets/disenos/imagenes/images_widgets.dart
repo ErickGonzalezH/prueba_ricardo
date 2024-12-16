@@ -60,8 +60,8 @@ Widget imageWithPopup({
                         top: 10,
                         right: 10,
                         child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.5),
+                          decoration: const BoxDecoration(
+                            color: Colors.black,
                             shape: BoxShape.circle,
                           ),
                           child: IconButton(

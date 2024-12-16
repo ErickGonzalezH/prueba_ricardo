@@ -4,10 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:prueba_ricardo/colors/colors.dart';
 
+import 'package:prueba_ricardo/widgets/exports_widgets.dart';
 import 'package:prueba_ricardo/validators/formulario_validate.dart';
 import 'package:prueba_ricardo/widgets/disenos/botones/botones_widgets.dart';
-import 'package:prueba_ricardo/widgets/disenos/textos/textos_widgets.dart';
-import 'package:prueba_ricardo/widgets/exports_widgets.dart';
 
 class FormularioScreen extends StatefulWidget {
     final Size size;

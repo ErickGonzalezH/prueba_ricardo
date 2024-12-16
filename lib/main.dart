@@ -43,7 +43,6 @@ class MyApp extends StatelessWidget {
         )
       ),
 
-
       title: 'Prueba Ricardo',
       initialRoute: Routes.inicialScreen,
       routes: PagesRoutes.route,
