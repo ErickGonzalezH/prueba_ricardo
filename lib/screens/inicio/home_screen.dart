@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     size: size, 
                     image: 'assets/imagen4.jpg', 
                     title: 'Consumo de API', 
-                    subtitle: 'Se muestra ejemplos de dependencias de 3ros', 
+                    subtitle: 'Se consume un API para jalar info de la red', 
                     onPressed: () {}, 
                   ),
                   const Divider(),
