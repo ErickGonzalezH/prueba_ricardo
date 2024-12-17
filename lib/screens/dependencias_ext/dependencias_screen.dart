@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_custom_cards/flutter_custom_cards.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:prueba_ricardo/colors/colors.dart';
+import 'package:flutter_custom_cards/flutter_custom_cards.dart';
+import 'package:animated_icon_button/animated_icon_button.dart';
 
+import 'package:prueba_ricardo/colors/colors.dart';
 import 'package:prueba_ricardo/widgets/exports_widgets.dart';
 
 class DependenciasScreen extends StatefulWidget {
@@ -47,10 +48,10 @@ class _DependenciasScreenState extends State<DependenciasScreen> {
               ),
           
               SizedBox(height: widget.size.shortestSide * .2),
-          
-              Visibility(
-                visible: activo,
-                child: Custom3DCard(
+
+              if(activo) ...{
+
+                Custom3DCard(
                   elevation: 4,
                   child: SizedBox(
                     height: 100,
@@ -60,7 +61,30 @@ class _DependenciasScreenState extends State<DependenciasScreen> {
                     ),
                   ),
                 ),
-              ),
+
+                AnimatedIconButton(
+                  size: 100,
+                  onPressed: () {},
+                  duration: const Duration(milliseconds: 500),
+                  splashColor: Colors.transparent,
+                  icons: const <AnimatedIconItem>[
+                    AnimatedIconItem(
+                      icon: Icon(LineIcons.car, color: Colors.purple),
+                    ),
+                    AnimatedIconItem(
+                      icon: Icon(LineIcons.hourglass, color: Colors.red),
+                    ),
+                     AnimatedIconItem(
+                      icon: Icon(LineIcons.phone, color: Colors.blue),
+                    ),
+                     AnimatedIconItem(
+                      icon: Icon(LineIcons.hamburger, color: Colors.yellow),
+                    ),
+                  ],
+                ),
+
+              },
+
           
             ],
           ),

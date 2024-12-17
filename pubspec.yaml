@@ -20,6 +20,7 @@ dependencies:
 
   # Disenos
   line_icons: ^2.0.3
+  animated_icon_button: ^1.0.2
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
