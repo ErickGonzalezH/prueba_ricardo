@@ -63,7 +63,7 @@ class _DependenciasScreenState extends State<DependenciasScreen> {
                 ),
 
                 AnimatedIconButton(
-                  size: 101,
+                  size: 100,
                   onPressed: () {},
                   duration: const Duration(milliseconds: 500),
                   splashColor: Colors.transparent,
