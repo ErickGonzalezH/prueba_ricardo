@@ -72,7 +72,7 @@ class _DependenciasScreenState extends State<DependenciasScreen> {
                       icon: Icon(LineIcons.car, color: Colors.purple),
                     ),
                     AnimatedIconItem(
-                      icon: Icon(LineIcons.hourglass, color: Colors.red),
+                      icon: Icon(LineIcons.hourglass, color: Colors.black),
                     ),
                      AnimatedIconItem(
                       icon: Icon(LineIcons.phone, color: Colors.blue),
