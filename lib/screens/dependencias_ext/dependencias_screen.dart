@@ -30,7 +30,7 @@ class _DependenciasScreenState extends State<DependenciasScreen> {
             children: [
               
               CustomCard(
-                childPadding: 0,
+                childPadding: 1,
                 elevation: activo ? 10 : 1,
                 borderRadius: activo ? 50 : 10,
                 borderWidth: activo ? 3 : 1,
