@@ -1,8 +1,7 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:prueba_ricardo/screens/exports_screens.dart';
 
+import 'package:prueba_ricardo/screens/exports_screens.dart';
 import 'package:prueba_ricardo/widgets/exports_widgets.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -87,7 +86,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     image: 'assets/imagen3.jpg', 
                     title: 'Dependencias externas', 
                     subtitle: 'Se muestra ejemplos de dependencias de 3ros', 
-                    onPressed: () {}, 
+                    onPressed: () {
+                      log('Se presionón la opción de dependencias');
+                      // Navigator.pushNamed(context, Routes.listaScreen);
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => DependenciasScreen(size: size)
+                        ),
+                      );
+                    },
                   ),
                   const Divider(),
                   menuOpciones(

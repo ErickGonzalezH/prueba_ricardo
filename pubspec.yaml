@@ -16,7 +16,10 @@ dependencies:
 
   # Utilidad
   provider: ^6.1.2
-  # cached_network_image: ^3.3.1
+  flutter_custom_cards: ^0.2.1
+
+  # Disenos
+  line_icons: ^2.0.3
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
