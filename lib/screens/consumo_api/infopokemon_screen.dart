@@ -106,10 +106,7 @@ class _InfoPokemonScreenState extends State<InfoPokemonScreen> {
                                 borderColor: Colors.grey,
                                 elevation: 0,
                                 borderRadius: 10,
-                                child: richText(
-                                  text1: habilidades.ability.name, 
-                                  text2: ''
-                                )
+                                child: customText(text: habilidades.ability.name)
                               );
                             }
                           )
