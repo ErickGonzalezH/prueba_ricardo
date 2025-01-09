@@ -102,7 +102,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     image: 'assets/imagen4.jpg', 
                     title: 'Consumo de API', 
                     subtitle: 'Consumir información de internet', 
-                    onPressed: () {}, 
+                    onPressed: () {
+                      log('Se presionón la opción de dependencias');
+                      // Navigator.pushNamed(context, Routes.listaScreen);
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => ConsumoScreen(size: size)
+                        ),
+                      );
+                    }, 
                   ),
                   const Divider(),
                 ],

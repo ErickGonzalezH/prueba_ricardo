@@ -17,7 +17,8 @@ dependencies:
   # Utilidad
   provider: ^6.1.2
   flutter_custom_cards: ^0.2.1
-
+  http: ^1.2.2
+  
   # Disenos
   line_icons: ^2.0.3
   animated_icon_button: ^1.0.2

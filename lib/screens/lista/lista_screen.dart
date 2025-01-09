@@ -25,6 +25,8 @@ class _ListaScreenState extends State<ListaScreen> {
     'Version': 3.0,
     'Plataforma': 'Mobile',
     'Framework': 'Dart',
+    'Ciudad': 'Colima',
+    'Comida': 'Tacos'
   };
 
   @override
@@ -102,6 +104,7 @@ class _ListaScreenState extends State<ListaScreen> {
               ),
             ),
 
+            SizedBox(height: widget.size.shortestSide * .03),
             customNiggaText(text: 'Lista dinámica de elementos(Lista)', size: 20),
             SizedBox(height: widget.size.shortestSide * .03),
 

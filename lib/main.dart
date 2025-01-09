@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:prueba_ricardo/Routes/routes.dart';
 import 'package:prueba_ricardo/Routes/pages_routes.dart';
 import 'package:prueba_ricardo/colors/colors.dart';
+import 'package:prueba_ricardo/providers/pokemon_provider.dart';
 import 'package:prueba_ricardo/validators/formulario_validate.dart';
 
 void main() async {
@@ -20,6 +21,7 @@ void main() async {
 
 miAppMultiProvider() => MultiProvider(
   providers: [
+    ChangeNotifierProvider(create: (_) => PokemonProvider()),
     ChangeNotifierProvider(create: (_) => ValidateFormulario()),
   ],
   child: const MyApp(),
