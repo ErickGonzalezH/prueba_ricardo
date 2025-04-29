@@ -12,6 +12,7 @@ class PokemonProvider extends ChangeNotifier {
   List<PokemonesModel> _pokemones = [];
   List<PokemonesModel> get pokemones => _pokemones;
 
+  //OBTENER TODA LA LISTA DE POKEMONES
   Future<void> getPokemones() async {
     var url = '$urlBase/pokemon?limit=101&offset=0';
 
@@ -40,14 +41,13 @@ class PokemonProvider extends ChangeNotifier {
   PokemonIndModel? _infoPokemon;
   PokemonIndModel? get infoPokemon => _infoPokemon;
 
+  //OBTENER LA INFO DE UN POKEMON EN ESPECIFICO
   Future<void> getInfoPokemon({required String link}) async {
     var url = link;
-
     try {
       final response = await http.get(Uri.parse(url));
 
       if (response.statusCode >= 200 && response.statusCode <= 299) {
-
         final Map<String, dynamic> data = json.decode(response.body);
         _infoPokemon = PokemonIndModel.fromJson(data);
         notifyListeners();

@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:prueba_ricardo/colors/colors.dart';
 
 import 'package:prueba_ricardo/providers/pokemon_provider.dart';
+import 'package:prueba_ricardo/screens/exports_screens.dart';
 import 'package:prueba_ricardo/widgets/exports_widgets.dart';
 
 class InfoPokemonScreen extends StatefulWidget {
@@ -114,6 +115,22 @@ class _InfoPokemonScreenState extends State<InfoPokemonScreen> {
                       )
                     ),
                   ),
+                  materialChidoButton(
+                    onPressed: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => PruebaModelScreen(
+                            infoPokemon: pokemonInfoProvider.infoPokemon!,
+                          )
+                        ),
+                      );
+                    }, 
+                    text: 'Prueba', 
+                    minWidth: widget.size.shortestSide * .6, 
+                    color: kconstPrimaryColor, 
+                    textSize: 17,
+                    textColor: Colors.white
+                  )
                 ],
               ),
             ),
