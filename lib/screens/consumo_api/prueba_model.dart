@@ -13,7 +13,7 @@ class PruebaModelScreen extends StatelessWidget {
       appBar: AppBar(title: customNiggaText(text: 'Información de ${infoPokemon.name}', color: Colors.white)),
 
       body: const Center(
-        child: Text('PruebaModelScreen'),
+        child: Text('PruebaModelScreendcdcdcd'),
       ),
     );
   }
