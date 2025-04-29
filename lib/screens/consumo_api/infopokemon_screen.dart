@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_custom_cards/flutter_custom_cards.dart';
 import 'package:provider/provider.dart';
 import 'package:prueba_ricardo/colors/colors.dart';
 
-import 'package:prueba_ricardo/providers/pokemon_provider.dart';
-import 'package:prueba_ricardo/screens/exports_screens.dart';
 import 'package:prueba_ricardo/widgets/exports_widgets.dart';
+import 'package:prueba_ricardo/screens/exports_screens.dart';
+import 'package:prueba_ricardo/providers/pokemon_provider.dart';
+import 'package:flutter_custom_cards/flutter_custom_cards.dart';
 
 class InfoPokemonScreen extends StatefulWidget {
     final Size size;
