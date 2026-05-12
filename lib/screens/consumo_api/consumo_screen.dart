@@ -56,8 +56,8 @@ class _ConsumoScreenState extends State<ConsumoScreen> {
               color: Colors.transparent,
               elevation: 0,
               borderRadius: 10,
-              borderColor: Colors.black,
-              borderWidth: 1,
+              // borderColor: Colors.black,
+              // borderWidth: 1,
               height: widget.size.shortestSide * 1.7,
 
               child: pokemonProvider.pokemones.isNotEmpty

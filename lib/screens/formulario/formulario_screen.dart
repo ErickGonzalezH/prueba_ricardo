@@ -72,9 +72,9 @@ class _FormularioScreenState extends State<FormularioScreen> {
                     if (value == null || value.isEmpty) {
                       return 'Campo obligatorio';
                     }
-                    if (int.parse(value) < 10){
-                      return 'Ingresa un número válido';
-                    }
+                    // if (int.parse(value) < 10){
+                    //   return 'Ingresa un número válido';
+                    // }
                     return null;
                   },
                   "Telefono",

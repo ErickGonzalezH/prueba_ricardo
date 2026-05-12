@@ -93,8 +93,9 @@ class _InfoPokemonScreenState extends State<InfoPokemonScreen> {
                     text2: pokemonInfoProvider.infoPokemon!.baseExperience.toString(),
                   ),
                   SizedBox(height: widget.size.shortestSide * .015),
+                  customNiggaText(text: 'Habilidades: '),
                   SizedBox(
-                    height: widget.size.shortestSide * .2,
+                    height: widget.size.shortestSide * .3,
                     child: Scrollbar(
                       child: CustomScrollView(
                         slivers: [
@@ -115,21 +116,23 @@ class _InfoPokemonScreenState extends State<InfoPokemonScreen> {
                       )
                     ),
                   ),
-                  materialChidoButton(
-                    onPressed: (){
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => PruebaModelScreen(
-                            infoPokemon: pokemonInfoProvider.infoPokemon!,
-                          )
-                        ),
-                      );
-                    }, 
-                    text: 'Prueba', 
-                    minWidth: widget.size.shortestSide * .6, 
-                    color: kconstPrimaryColor, 
-                    textSize: 17,
-                    textColor: Colors.white
+                  Center(
+                    child: materialChidoButton(
+                      onPressed: (){
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => PruebaModelScreen(
+                              infoPokemon: pokemonInfoProvider.infoPokemon!,
+                            )
+                          ),
+                        );
+                      }, 
+                      text: 'Prueba', 
+                      minWidth: widget.size.shortestSide * .6, 
+                      color: kconstPrimaryColor, 
+                      textSize: 17,
+                      textColor: Colors.white
+                    ),
                   )
                 ],
               ),
